@@ -2,7 +2,7 @@
 Octopus Assignment
 ===============================
 ## Details
-This Application reads a CSV file and merge with models and rendering it on the browser
+This Application reads a CSV file, merge with models and renders it on the browser
 
 
 
@@ -12,12 +12,12 @@ To run this server locally,
 1. Install python 3 on your local machine 
 2. Clone the repository using **git clone https://github.com/raguram-24/django_assessment.git**.
 3. Navigate to project root directory and open a terminal.
-4. run the following commands
-    pip install pipenv
-    pipenv install django
-    pipenv shell
-    pip freeze
-    python manage.py runserver
+4. Run the following commands
+    1. pip install pipenv
+    2. pipenv install django
+    3. pipenv shell
+    4. pip freeze
+    5. python manage.py runserver
 
 
 To run this server locally using docker,
