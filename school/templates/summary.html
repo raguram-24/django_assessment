@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Summary List</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+<h1 class="mt-5">Summary List</h1>
+    <table class="table table-bordered mt-3">
+        <thead>
+            <tr>
+                <th>School Id</th>
+                <th>Sydney_Participant</th>
+                <th>Syndey_Percentile</th>
+                <th>Assessment_Area_Id</th>
+                <th>Award_Id</th>
+                <th>Class_Id</th>
+                <th>Correct_answer_percentage_per_class</th>
+                <th>Correct_Answer</th>
+                <th>Student_Id</th>
+                <th>Participant</th>
+                <th>Student_score</th>
+                <th>Subject_Id</th>
+                <th>Category_Id</th>
+                <th>Year_level_name</th>
+                <th>Answer_Id</th>
+                <th>Correct_answer_Id</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            {% for summary in summaries %}
+                <tr>
+                    <td>{{ summary.id }}</td>
+                    <td>{{ summary.school_id_id }}</td>
+                    <td>{{ summary.sydney_participant }}</td>
+                    <td>{{ summary.sydney_percentile }}</td>  <!-- This should match the field name in your model -->
+                    <td>{{ summary.assessment_area_id_id }}</td>
+                    <td>{{ summary.award_id_id }}</td>
+                    <td>{{ summary.class_id_id }}</td>
+                    <td>{{ summary.correct_answer_percentage_per_class }}</td>
+                    <td>{{ summary.correct_answer }}</td>
+                    <td>{{ summary.student_id_id }}</td>
+                    <td>{{ summary.participant }}</td>
+                    <td>{{ summary.subject_id_id }}</td>
+                    <td>{{ summary.category_id }}</td>
+                    <td>{{ summary.year_level_name }}</td>
+                    <td>{{ summary.answer_id_id }}</td>
+                    <td>{{ summary.correct_answer_id_id }}</td>
+
+                </tr>
+            {% empty %}
+                <tr>
+                    <td colspan="2" class="text-center">No Summaries available.</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    
+</div>
+
+</body>
+</html>
